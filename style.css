@@ -1,5 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    background-color: #0c1022;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 20vh;
+    color: orangered;
+    font-size: 3em;
+}
+
+header p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: white;
+}
+
+header img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
