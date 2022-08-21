@@ -5,17 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Players</title>
+    <title>Dream Team Builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <img src="images/banner/banner.png" alt="">
         <h1>Build Your Dream Team</h1>
         <p>Build your own team by selecting upto 5 players and see how much will it cost to build your dream team.</p>
     </header>
-    <main></main>
+    <main>
+        <!-- Sidebar -->
+        <aside>
+            <div class="players">
+                <h3>Selected - V</h3>
+                <ol id="player-list">
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                </ol>
+            </div>
+            <div class="calculation">
+                <h3>Budget</h3>
+                <div class="flex">
+                    <label for="player-cost">Per Player</label>
+                    <input id="player-cost" type="number">
+                </div>
+                <button id="player-calc-btn">Calculate</button>
+                <div class="flex">
+                    <p>Player Expenses</p>
+                    <p>$ <span id="player-expenses">0</span></p>
+                </div>
+                <div class="flex">
+                    <label for="manager-cost">Manager</label>
+                    <input id="manager-cost" type="number">
+                </div>
+                <div class="flex">
+                    <label for="coach-cost">Coach</label>
+                    <input id="coach-cost" type="number">
+                </div>
+                <button id="player-calc-btn">Calculate</button>
+                <div class="flex">
+                    <p>Total Cost</p>
+                    <p>$ <span id="total-cost">0</span></p>
+                </div>
+            </div>
+        </aside>
+        <section></section>
+    </main>
     <footer></footer>
 </body>
 

@@ -9,10 +9,28 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.2rem;
+    background-color: #0c1022;
+    color: rgb(220, 220, 220);
 }
 
+main {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    background-color: #302E45;
+}
+
+button {
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+}
+
+/* Header */
 header {
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     position: relative;
     height: 70vh;
     background-color: #0c1022;
@@ -22,17 +40,74 @@ header {
 h1 {
     padding-top: 20vh;
     color: orangered;
-    font-size: 3em;
+    font-size: 3.5rem;
 }
 
 header p {
     max-width: 600px;
     margin: 20px auto;
-    color: white;
 }
 
 header img {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+/* Sidebar */
+aside {
+    text-align: center;
+    min-width: 260px;
+    margin: 40px 40px 0 0;
+}
+
+aside>div {
+    background-color: #0c1022;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+ol {
+    text-align: left;
+    list-style-position: inside;
+    margin: 30px 0 30px;
+    padding-left: 30px;
+}
+
+ol li {
+    margin-bottom: 5px;
+}
+
+.calculation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculation input {
+    width: 100px;
+    padding: 5px 10px;
+    outline: none;
+    background-color: #0c1022;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid white;
+}
+
+.calculation button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #00d6cf;
+}
+
+.calculation button:hover {
+    background-color: #20fff8;
 }
