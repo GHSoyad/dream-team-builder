@@ -22,9 +22,25 @@ main {
 }
 
 button {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #00d6cf;
     cursor: pointer;
     transition: .3s;
-    font-weight: bold;
+}
+
+button:hover {
+    background-color: #20fff8;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.3rem;
 }
 
 /* Header */
@@ -102,12 +118,36 @@ ol li {
     border: 2px solid white;
 }
 
-.calculation button {
-    padding: 10px;
-    font-size: 1rem;
-    background-color: #00d6cf;
+/* Players section */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex: 1;
+    gap: 30px;
+    margin: 40px 30px 0 40px;
 }
 
-.calculation button:hover {
-    background-color: #20fff8;
+.player {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid #0c1022;
+}
+
+.player img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.player-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    background-color: #0c1022;
+    padding: 20px 25px;
+}
+
+.player-details p {
+    font-size: 1rem;
 }
