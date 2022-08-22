@@ -64,5 +64,6 @@ document.getElementById('players-list').addEventListener('click', function (even
         selectedPlayer.appendChild(setPlayerName);
         selectedPlayersList.appendChild(selectedPlayer);
         selectButtons.setAttribute('disabled', true);
+        selectButtons.innerText = 'SELECTED';
     }
 })

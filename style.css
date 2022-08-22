@@ -12,6 +12,7 @@ body {
     font-size: 1.2rem;
     background-color: #0c1022;
     color: rgb(220, 220, 220);
+    cursor: default;
 }
 
 main {
@@ -24,6 +25,7 @@ main {
 
 button {
     padding: 10px;
+    margin-bottom: 5px;
     font-size: 1rem;
     font-weight: bold;
     background-color: #00d6cf;
@@ -36,12 +38,13 @@ button:hover {
 }
 
 button:disabled {
+    color: #0c1022a9;
     background-color: gray;
+    cursor: default;
 }
 
 h2 {
     font-size: 1.6rem;
-    margin-bottom: 10px;
 }
 
 h3 {
@@ -56,6 +59,7 @@ header {
     height: 65vh;
     background-color: #0c1022;
     text-align: center;
+    text-shadow: 1px 1px #0c1022;
 }
 
 h1 {
@@ -64,17 +68,27 @@ h1 {
     padding-top: 25vh;
     color: orangered;
     font-size: 4rem;
+    position: relative;
 }
 
 header p {
     max-width: 600px;
     margin: 20px auto;
+    position: relative;
 }
 
 header img {
     position: absolute;
-    bottom: 0;
+}
+
+.banner-left {
     left: 0;
+    bottom: 0;
+}
+
+.banner-right {
+    right: 0;
+    bottom: 0;
 }
 
 /* Sidebar */
@@ -90,19 +104,23 @@ aside>div {
     padding: 20px 0;
 }
 
+aside img {
+    margin: 3px 0 10px;
+}
+
 .selected-players {
-    min-height: 290px;
+    min-height: 310px;
 }
 
 ol {
     text-align: left;
     list-style-position: inside;
-    margin: 30px 0 30px;
-    padding-left: 30px;
+    margin: 10px 0 20px;
+    padding-left: 40px;
 }
 
 ol li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .calculation {
@@ -142,6 +160,7 @@ ol li {
     display: flex;
     flex-direction: column;
     position: relative;
+    background-color: #0c1022;
     border: 1px solid #0c1022;
 }
 
@@ -156,16 +175,11 @@ ol li {
     transition: .3s;
 }
 
-.player:hover img {
-    transform: scale(1.1);
-}
-
 .player-details {
     display: flex;
     flex-direction: column;
     gap: 15px;
     text-align: center;
-    background-color: #0c1022;
     padding: 20px 25px;
 }
 
