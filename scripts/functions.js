@@ -7,7 +7,7 @@ function getInputValueById(inputId) {
 }
 
 // Function to get element value by id
-function getElementValurById(elementId) {
+function getElementValueById(elementId) {
     const elementField = document.getElementById(elementId);
     const elementFieldValue = elementField.innerText;
     const elementValue = parseInt(elementFieldValue);
